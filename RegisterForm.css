@@ -1,0 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: cornsilk;
+
+}
+.heading
+{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+.FormRegister{
+    background-color: antiquewhite;
+    height: 400px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    
+    margin-left: 35%;
+}
+.btn{
+  margin: 0;
+  position: absolute;
+  left: 40%;
+  margin-top: 15px;
+  height: 500x;
+  width: 100px;
+  background-color: green;
+ 
+}
