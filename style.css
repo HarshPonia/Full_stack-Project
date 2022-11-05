@@ -1,10 +1,14 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     background-color: cornsilk;
-
 }
+
+body {
+    margin-bottom: 20px;
+}
+
 
 /* .div0{
     height:60px;
@@ -13,13 +17,29 @@
     margin-left: 40%;
     margin-top: 10px;
 } */
-.div1{
+
+.div1 {
     width: 100%;
     height: 50px;
     background-color: darkgoldenrod;
     margin-top: 25px;
 }
-.span2{
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#bus1 {
+    width: 800px;
+    height: 600px;
+    background-image: url("Images/volvo.png");
+    padding-top: 380px;
+    background-repeat: no-repeat;
+}
+
+.span2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
@@ -33,15 +53,24 @@
     color: aliceblue;
     background-color: black;
 }
-.div2{
+
+.div2 {
     width: 500px;
     height: 250px;
     background-color: rgb(237, 245, 246);
     margin-top: 30px;
-   margin-left: 25%;
-   border: 2px solid black;
+    box-shadow: 5px 10px rgb(135, 126, 126);
+    border: 2px solid black;
+    border-radius: 5px;
 }
-.span1{
+
+#column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.span1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
@@ -54,7 +83,14 @@
     color: aliceblue;
     background-color: black;
 }
-#span1{
+
+.span1 a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+#span1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
@@ -62,7 +98,8 @@
     margin-top: 35px;
     font-size: 22px;
 }
-.span3{
+
+.span3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,5 +107,27 @@
     font-size: 20px;
 }
 
+.p1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px;
+    background-color: aliceblue;
+}
 
+#Text1 {
+    margin-left: 20px;
+    background-color: aliceblue;
+}
 
+#postbutton {
+    float: right;
+    margin-right: 40px;
+    padding: 5px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: royalblue;
+}
+
+#postbutton:hover {
+    cursor: pointer;
+}
