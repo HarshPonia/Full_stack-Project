@@ -1,38 +1,39 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     background-color: cornsilk;
-
 }
 
-.div0{
-    display:flex;
-    flex-direction:row;
+body {
+    margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div0 {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding-right: 35px ;
+    padding-right: 35px;
 }
+
+/* .div0{
+    height:60px;
+    width: 200px;
+    background-color:gray;
+    margin-left: 40%;
+    margin-top: 10px;
+} */
 .div1{
     width: 100%;
-    height: 30px;
-    margin-top: 8px;
-    background-color: royalblue;
-}
-nav{
-    margin-left: 20px;
-}
-.navBar{
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 2px solid lightblue;
-    background-color: royalblue;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 20px;
-
+    height: 50px;
+    background-color: darkgoldenrod;
+    margin-top: 25px;
 }
 .span2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -48,15 +49,24 @@ nav{
     color: aliceblue;
     background-color: black;
 }
-.div2{
+
+.div2 {
     width: 500px;
     height: 250px;
     background-color: rgb(237, 245, 246);
     margin-top: 30px;
-   margin-left: 25%;
-   border: 2px solid black;
+    box-shadow: 5px 10px rgb(135, 126, 126);
+    border: 2px solid black;
+    border-radius: 5px;
 }
-.span1{
+
+#column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.span1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
@@ -69,19 +79,21 @@ nav{
     color: aliceblue;
     background-color: black;
 }
-#span1{
+
+.span1 a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+#span1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
-    justify-content: left;
-    margin-left: 15px;
-    margin-top: 10px;
-    font-size: 30px;
-    color: royalblue;
-    text-shadow: -1px 0 black , 0 1px black , 1px 0 black,0 -1px black;
-    
+    justify-content: center;
+    margin-top: 35px;
+    font-size: 22px;
 }
-
 .span3{
     display: flex;
     justify-content: center;
@@ -89,21 +101,18 @@ nav{
     padding-top: 15px;
     font-size: 20px;
 }
-#avtar{
-    width: 30px;
-    height: 30px;
-    
-}
-#login{
-    width: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    
+
+
+
+#postbutton {
+    float: right;
+    margin-right: 40px;
+    padding: 5px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: royalblue;
 }
 
-
-
-
+#postbutton:hover {
+    cursor: pointer;
+}
