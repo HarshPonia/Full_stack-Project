@@ -1,25 +1,111 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     background-color: cornsilk;
-
 }
 
-/* .div0{
-    height:60px;
-    width: 200px;
-    background-color:gray;
-    margin-left: 40%;
-    margin-top: 10px;
-} */
-.div1{
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 35px;
+}
+
+.div1 {
+    display: block;
     width: 100%;
-    height: 50px;
-    background-color: darkgoldenrod;
-    margin-top: 25px;
+    height: 40px;
+    margin-top: 8px;
+    background-color: royalblue;
 }
-.span2{
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: royalblue;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    background-color: royalblue;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+ul,
+.navBar {
+    background-color: royalblue;
+}
+
+.navBar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: -1px 0 wheat, 0 1px wheat, 1px 0 wheat, 0 -1px wheat;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    position: relative;
+}
+
+.navBar::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(wheat, black, wheat);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navBar:hover::after {
+    width: 100%;
+}
+
+#a-tag {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid lightblue;
+    background-color: royalblue;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#avtar {
+    width: 30px;
+    height: 30px;
+}
+
+#login {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+#bus {
+    width: 800px;
+    height: 600px;
+    background-image: url("Images/volvo.png");
+    padding-top: 380px;
+    background-repeat: no-repeat;
+}
+
+.span2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
@@ -33,42 +119,114 @@
     color: aliceblue;
     background-color: black;
 }
-.div2{
-    width: 500px;
+
+#boxes {
+    width: 34%;
+    margin-top: 50px;
+}
+
+.div2 {
+    width: 100%;
     height: 250px;
     background-color: rgb(237, 245, 246);
     margin-top: 30px;
-   margin-left: 25%;
-   border: 2px solid black;
+    box-shadow: 5px 10px rgb(135, 126, 126);
+    border: 2px solid black;
+    border-radius: 5px;
 }
-.span1{
+
+i {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: start;
+    margin-top: 10px;
+    font-size: 15px;
+    color: wheat;
+}
+
+.span1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 90px;
     font-size: 20px;
-    height: 50px;
-    width: 200px;
+    height: 20%;
+    width: 40%;
     margin-left: 30%;
     color: aliceblue;
     background-color: black;
 }
-#span1{
+
+.span1 a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+#span1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 35px;
-    font-size: 22px;
+    justify-content: left;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: royalblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.span3{
+
+.span3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 30px;
     font-size: 20px;
 }
 
+.p1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px;
+    background-color: aliceblue;
+}
 
+#Text1 {
+    margin-left: 20px;
+    background-color: aliceblue;
+}
 
+#postbutton {
+    float: right;
+    margin-right: 40px;
+    padding: 5px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: royalblue;
+}
+
+#postbutton:hover {
+    cursor: pointer;
+}
+
+#about {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    margin-top: 50px;
+}
+
+#about p {
+    padding: 20px 20px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: -1px 0 wheat, 0 1px wheat, 1px 0 wheat, 0 -1px wheat;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
